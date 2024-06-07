@@ -4,7 +4,7 @@
       {
         "src": "Diamour_backend/wsgi.py",
         "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb", "runtime": "python5.0.6" }
+        "config": { "maxLambdaSize": "15mb", "runtime": "python" }
       },
       {
         "src": "build_files.sh",
