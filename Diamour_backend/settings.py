@@ -137,9 +137,10 @@ CORS_ALLOWED_ORIGINS = [
     "https://thediamour.com",
     "https://diamour-frontend.vercel.app",
     "https://diamours.vercel.app",
-    '.vercel.app',
-    '.now.sh'
+    "https://seahorse-app-zsnys.ondigitalocean.app",
 ]
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 from .cdn.conf import *
 
