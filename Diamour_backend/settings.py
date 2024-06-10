@@ -12,7 +12,21 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
-# ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost","*").split(",")
+# other settings
+
+
+
+# other settings
+
+
+ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost","*").split(",")
+# DEBUG = False
+
+# ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]']
+
+import sys
+print(sys.path)
+
 
 # Application definition
 DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False") == "True"
@@ -27,6 +41,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "corsheaders",
     "rest_framework_simplejwt",
+    'rest_framework',
     "core",
     "authent",
     "storages",
@@ -103,6 +118,8 @@ REST_FRAMEWORK = {
         "rest_framework_simplejwt.authentication.JWTAuthentication",
     )
 }
+
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
