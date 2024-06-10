@@ -1,4 +1,5 @@
 
- -m pip install -r requirements.txt
-python3.9 manage.py collectstatic  --noinput --clear
+#!/bin/bash
+source /path/to/your/venv/bin/activate
+python manage.py collectstatic --noinput
 
